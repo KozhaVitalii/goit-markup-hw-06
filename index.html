@@ -424,6 +424,26 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form">
+            <p class="social-text">Subscribe</p>
+            <form class="js-speaker-form">
+              <!-- <label for="footer-email">Email</label> -->
+              <input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+
+              <button type="submit" class="button-subscribe pointer">
+                Subscribe
+                <svg class="icon-close" width="8" height="8">
+                  <use href="./images1/sprite1.svg#icon-frame"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -435,6 +455,100 @@
             <use href="./images1/sprite1.svg#icon-close-modal"></use>
           </svg>
         </button>
+
+        <p class="form-describe">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form js-speaker-form">
+          <div class="form-field">
+            <label for="name" class="form-label">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="name"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="tel" class="form-label">Phone</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="form-label">Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-field-text">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea
+              class="comment-style"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              autocomplete="off"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-field">
+            <input
+              class="check-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              checked
+            />
+            <label for="policy" class="policy-label"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+          <!-- Добавил только для практики  -->
+          <!-- <div role="group">
+              <label for="junior">Junior</label>
+              <input
+                type="radio"
+                name="experience"
+                value="junior"
+                id="junior"
+                checked
+              />
+
+              <label for="middle">Middle</label>
+              <input
+                type="radio"
+                name="experience"
+                value="middle"
+                id="middle"
+              />
+
+              <label for="senior">Senior</label>
+              <input
+                type="radio"
+                name="experience"
+                value="senior"
+                id="senior"
+              />
+            </div>
+
+            <label for="date">Date</label>
+            <input
+              type="datetime-local"
+              name="date"
+              id="date"
+              min="2023-01-01T00:00"
+              max="2023-12-31T23:59"
+            />
+
+            <label for="pdf">Download PDF file</label>
+            <input type="file" name="pdf" id="pdf" /> -->
+
+          <button type="submit" class="button-send pointer">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
